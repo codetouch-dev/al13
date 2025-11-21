@@ -1,9 +1,9 @@
 /* === import font here === */
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
 .body {
   background: #fff;
-  font-family: "Kanit", sans-serif;
+  font-family: "Inter Tight", sans-serif;
 }
 
 /* === this class is universal === */
@@ -27,19 +27,18 @@
 
 /* ============= header ============== */
 .header {
-  position: fixed;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.2);
-
-  transition: background 0.3s;
+  line-height: 1;
 }
 
 .header__inner {
-  height: 60px;
+  padding: 20px 40px;
+  margin-top: 20px;
+  background: #D9D9D9;
+  height: 80px;
+  border-radius: 40px;
 }
 
 .header__nav {
-  line-height: 1;
   height: 100%;
   width: 100%;
   display: flex;
@@ -60,38 +59,12 @@
 }
 
 .header__item {
-  position: relative;
-  font-weight: 300;
-  font-size: 20px;
   text-transform: uppercase;
-  color: #fff;
-}
-
-.header__item:after {
-  position: absolute;
-  content: '';
-  height: 20px;
-  width: 1px;
-  top: 0;
-  right: -10px;
-  background: #fff;
-}
-
-.header__item:last-child::after {
-  display: none;
 }
 
 .header__logo {
-  position: relative;
-  z-index: 1;
-  display: flex;
   font-size: 40px;
   font-weight: 400;
-  max-width: 113px;
-}
-
-.header__logo img {
-  width: 100%;
 }
 
 .burger-menu {
@@ -155,13 +128,12 @@
 @media (max-width: 900px) {
 
   .burger-menu {
-    margin-right: -20px;
     position: absolute;
     z-index: 4;
     top: 0px;
     right: 0px;
     display: block;
-    padding: 27px 0px;
+    padding: 19px 0px;
     cursor: pointer;
 
     transition: right 0.3s;
@@ -169,9 +141,10 @@
 
   .burger-menu span {
     display: block;
-    width: 60px;
-    height: 5px;
-    background: #fff;
+    width: 22px;
+    height: 2px;
+    border-radius: 5px;
+    background: #000;
     position: relative;
 
     transition: background 0.2s, transform 0.2s;
@@ -180,25 +153,27 @@
   .burger-menu span::before {
     content: '';
     position: absolute;
-    top: -11px;
+    top: -8px;
     display: block;
-    width: 60px;
-    height: 5px;
-    background: #fff;
+    width: 22px;
+    height: 2px;
+    border-radius: 5px;
+    background: #000;
 
-    transition: background 0.2s, top 0.2s;
+    transition: background 0.2s, transform 0.2s, top 0.2s 0.2s;
   }
 
   .burger-menu span::after {
     content: '';
     position: absolute;
-    top: 11px;
+    top: 8px;
     display: block;
-    width: 60px;
-    height: 5px;
-    background: #fff;
+    width: 22px;
+    height: 2px;
+    border-radius: 5px;
+    background: #000;
 
-    transition: background 0.2s, top 0.2s;
+    transition: background 0.2s, transform 0.2s, top 0.2s 0.2s;
   }
 
   .burger-menu--opened span {
@@ -206,15 +181,17 @@
   }
 
   .burger-menu--opened span::before {
+    transform: rotateZ(45deg);
     top: 0;
 
-    transition: background 0.2s, top 0.2s;
+    transition: background 0.2s, transform 0.2s 0.2s, top 0.2s;
   }
 
   .burger-menu--opened span::after {
+    transform: rotateZ(-45deg);
     top: 0;
 
-    transition: background 0.2s, top 0.2s;
+    transition: background 0.2s, transform 0.2s 0.2s, top 0.2s;
   }
 
   body.body-menu--opened {
@@ -227,32 +204,22 @@
     visibility: hidden;
     position: absolute;
     inset: 0;
-    right: -50vw;
+    top: -50vh;
     opacity: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: #D9D9D9;
     flex-direction: column;
-    justify-content: start;
-    align-items: end;
+    justify-content: center;
     gap: 40px;
     height: 100vh;
-    margin: 0 -20px;
-    padding: 60px 20px;
+    margin: -40px -60px;
 
-    transition: opacity 0.3s, right 0.3s, visibility 0.3s;
-  }
-
-  .body-menu--opened .header {
-    background: rgba(0, 0, 0, 0);
+    transition: opacity 0.3s, top 0.3s, visibility 0.3s;
   }
 
   .body-menu--opened .header__list {
     visibility: visible;
+    top: 0;
     opacity: 1;
-    right: 0;
-  }
-
-  .header__item:after {
-    display: none;
   }
 
   /* ============== footer ============== */
