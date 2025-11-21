@@ -46,7 +46,12 @@
         <main class="main">
 
             <section class="hero">
-                <img src="img/porsche-bg.jpg" alt="porsche 911 on al13 wheels" class="hero__bg">
+                <!-- <img src="img/porsche-bg.webp" alt="porsche 911 on al13 wheels" class="hero__bg"> -->
+                <picture>
+                    <source srcset="img/porsche-bg-mobile.webp" media="(max-width: 500px)">
+                    <source srcset="img/porsche-bg-tablet.webp" media="(max-width: 1000px)">
+                    <img src="img/porsche-bg-desktop.webp" alt="porsche 911 on al13 wheels" class="hero__bg">
+                </picture>
             </section>
             <br>
             <p>text</p>
