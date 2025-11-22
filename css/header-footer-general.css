@@ -25,6 +25,32 @@
   max-width: 1240px;
 }
 
+.btn {
+  text-align: center;
+  border-radius: 50px;
+  min-height: 40px;
+  padding: 13px 42px;
+  border: 2px solid #000;
+
+  transition: background 0.2s;
+}
+
+.btn span {
+  display: inline-block;
+  position: relative;
+
+  transition: transform 0.2s;
+}
+
+.btn img {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: -5px;
+
+  transition: opacity 0.2s, right 0.2s;
+}
+
 /* ============= header ============== */
 
 @keyframes header-load {
@@ -218,6 +244,25 @@
 
 @media (min-width: 900px) {
   /* === for all :hover classes === */
+
+  .btn:hover {
+    background: #c90101;
+    border: 2px solid #c90101;
+  }
+
+  .btn:hover.btn span {
+    transform: translateX(-5px);
+  }
+
+  .btn:hover.btn img {
+    opacity: 1;
+    right: -10px;
+  }
+
+
+
+
+
 }
 
 @media (max-width: 900px) {

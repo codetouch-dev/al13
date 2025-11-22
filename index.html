@@ -3,6 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header-footer-general.css">
     <link rel="stylesheet" href="css/main.css">
@@ -46,13 +51,31 @@
         <main class="main">
 
             <section class="hero">
-                <!-- <img src="img/porsche-bg.webp" alt="porsche 911 on al13 wheels" class="hero__bg"> -->
                 <picture>
                     <source srcset="img/porsche-bg-mobile.webp" media="(max-width: 500px)">
                     <source srcset="img/porsche-bg-tablet.webp" media="(max-width: 1000px)">
                     <img src="img/porsche-bg-desktop.webp" alt="porsche 911 on al13 wheels" class="hero__bg">
                 </picture>
             </section>
+
+            <section class="collection">
+                <div class="container">
+                    <div class="collection__inner">
+                        <img src="img/collection-logo.jpg" alt="company logo" class="collection__img">
+                        <h1 class="collection__title">Your New Favorite Wheel Brand.™</h1>
+                        <p class="collection__info">Explore all our wheel collections from our classics, luxury, carbon, and newest releases.</p>
+                        <div class="collection__divider"></div>
+                        <div class="collection__gallery">
+                            <img src="img/collection-img-1.jpg" alt="wheel" loading="lazy">
+                            <img src="img/collection-img-2.jpg" alt="wheel" loading="lazy">
+                            <img src="img/collection-img-3.jpg" alt="wheel" loading="lazy">
+                        </div>
+                        <a href="#" class="collection__link btn"><span>VIEW ALL WHEEL COLLECTIONS <img src="img/icons/collection-link-icon.svg" alt=""></span></a>
+                    </div>
+                </div>
+            </section>
+
+
             <br>
             <p>text</p>
             <br>
