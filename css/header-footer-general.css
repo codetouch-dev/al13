@@ -151,11 +151,6 @@
   animation: header-load 0.3s 0.8s 1 forwards;
 }
 
-
-
-
-
-
 .header__item:after {
   position: absolute;
   content: '';
@@ -186,6 +181,10 @@
 
 .header__logo img {
   width: 100%;
+}
+
+.header.scrolled {
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .burger-menu {
@@ -371,6 +370,7 @@
     visibility: visible;
     opacity: 1;
     right: 0;
+    backdrop-filter: blur(5px); 
   }
 
   .header__item:after {
