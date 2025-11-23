@@ -111,9 +111,17 @@
   height: 100%;
   width: 100%;
 }
+.about:after{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: 0.4;
+}
 
 .about__inner {
   position: relative;
+  z-index: 1;
   padding: 60px 0;
   height: 100%;
   display: flex;
