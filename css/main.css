@@ -64,18 +64,18 @@
 
 .collection__info {
   font-weight: 300;
-font-size: 16px;
-line-height: 100%;
-text-transform: uppercase;
-text-align: center;
-margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .collection__divider {
   width: 300px;
-height: 1px;
-background: #000;
-margin-bottom: 60px;
+  height: 1px;
+  background: #000;
+  margin-bottom: 60px;
 }
 
 .collection__gallery {
@@ -86,9 +86,10 @@ margin-bottom: 60px;
   max-width: 940px;
   margin-bottom: 60px;
 }
-.collection__gallery img{
-width: 100%;
-max-width: 300px;
+
+.collection__gallery img {
+  width: 100%;
+  max-width: 300px;
 }
 
 .collection__link {
@@ -96,7 +97,54 @@ max-width: 300px;
   font-weight: 300;
 }
 
+/* === about === */
+.about {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
 
+.about__bg {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.about__inner {
+  position: relative;
+  padding: 60px 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  color: #fff;
+}
+
+.about__title {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about__info {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.about__link {
+  border: 2px solid #fff;
+
+  transition: border 0.2s background 0.2s;
+}
 
 
 
@@ -125,18 +173,25 @@ max-width: 300px;
 
 @media (max-width: 1000px) {
 
-.collection__gallery {
-  flex-direction: column;
-  align-items: center;
-}
-.collection__gallery img{
-width: 100%;
-max-width: 500px;
+  .collection__gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .collection__gallery img {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .collection__link {
+    letter-spacing: 0.05em;
+    font-weight: 300;
+  }
+
 }
 
-.collection__link {
-  letter-spacing: 0.05em;
-  font-weight: 300;
-}
-
+@media (max-width: 600px) {
+  .about__title {
+    font-size: 40px;
+  }
 }
