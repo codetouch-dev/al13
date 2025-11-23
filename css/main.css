@@ -152,7 +152,7 @@
 .about__link {
   border: 2px solid #fff;
 
-  transition: border 0.2s background 0.2s;
+  transition: border 0.2s, background 0.2s;
 }
 
 

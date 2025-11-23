@@ -195,47 +195,62 @@
 /* ============= footer ============== */
 
 .footer {
-  margin-bottom: 20px;
-}
-
-.footer__inner {
-  background: #d9d9d9;
-  border-radius: 40px;
-  padding: 20px 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  min-height: 200px;
+  padding: 40px 0 0;
+  background: #000;
 }
 
 .footer__logo {
-  font-weight: 400;
-  font-size: 40px;
-  text-transform: uppercase;
-  width: fit-content;
+  max-width: 199px;
+  margin-bottom: 30px;
+}
+
+.footer__inner {
+  display: flex;
+  gap: 20px;
+  color: #fff;
+}
+
+.footer__inner>* {
+  padding: 30px 0 50px;
+  border-top: 1px solid #C90101;
+  width: 100%;
 }
 
 .footer__list {
-  width: 100%;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-rows: 1fr 1fr;
+  font-weight: 300;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
-.footer__item {
-  text-transform: uppercase;
-  font-weight: 500;
+.footer__item {}
+
+.footer__info {
+  font-weight: 300;
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.footer__item--social a {
-  display: inline-flex;
+.footer__bottom {
+  padding: 20px 40px;
+  border-top: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 300;
+  font-size: 20px;
+  gap: 10px;
 }
 
-.footer__item--social img {
-  margin-right: 10px;
+.footer__socials {
+  display: flex;
+  gap: 10px;
 }
 
 /* ===================== */
@@ -371,7 +386,7 @@
     visibility: visible;
     opacity: 1;
     right: 0;
-    backdrop-filter: blur(5px); 
+    backdrop-filter: blur(5px);
   }
 
   .header__item:after {
@@ -396,13 +411,40 @@
     font-size: 20px;
   }
 
-  .footer__logo {
+
+
+
+  .footer__item {
     font-size: 20px;
   }
 
-  .footer__item {
-    font-size: 14px;
-  }
+
+  .footer {
+  padding: 30px 0 0;
 }
 
+.footer__logo {
+    max-width: 115px;
+}
 
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  color: #fff;
+}
+
+.footer__inner>* {
+  padding: 30px 0;
+}
+
+.footer__info {
+  font-size: 14px;
+  gap: 10px;
+}
+
+.footer__bottom {
+  padding: 20px;
+}
+
+}
