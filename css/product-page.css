@@ -156,13 +156,30 @@
   }
 
   .product__img-wrapper,
-.product__info-wrapper {
-  width: 100%;
-}
+  .product__info-wrapper {
+    width: 100%;
+  }
+  .product__info-wrapper {
+    justify-content: start;
+  }
 
   .product__img {
     width: 300px;
   }
+
+  .product__info {
+    width: 100%;
+    text-align: left;
+  }
+
+  .product__title {
+    text-align: center;
+  margin-bottom: 30px;
+  }
+
+  .product__info button {
+  max-width: unset;
+}
 
 }
 
