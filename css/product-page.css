@@ -36,7 +36,7 @@
 .product__inner {}
 
 .product__card {
-  /* border: 1px solid #00f; */
+  border: 1px solid #00f;
   width: 100%;
   display: flex;
   gap: 50px;
@@ -46,21 +46,21 @@
 .product__img-wrapper,
 .product__info-wrapper {
   width: 50%;
-  /* border: 1px solid #000; */
+  border: 1px solid #000;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .product__img {
-  /* border: 1px solid #000; */
-  width: 100%;
-  max-width: 500px;
+  border: 1px solid #000;
+  /* width: 100%; */
+  width: 500px;
 }
 
 .product__info {
   text-align: right;
-  /* border: 1px solid #000; */
+  border: 1px solid #000;
   line-height: 1;
 }
 
@@ -94,19 +94,6 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-}
-
-/* #wheel-size::after, */
-select::before {
-  content: '';
-  position: absolute;
-  z-index: 30;
-  right: -30px;
-  top: 10;
-  width: 24px;
-  height: 24px;
-  /* background: url(../img/icons/tiktok.svg) no-repeat center center; */
-  background: #000;
 }
 
 
@@ -150,14 +137,33 @@ select::before {
 }
 
 @media (max-width: 800px) {
-  .product__card{
+  .product__card {
     flex-direction: column;
   }
+
   .hero {
-  height: 200px;
-}
+    height: 200px;
+  }
 }
 
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+  .product {
+    padding: 40px 0;
+  }
+
+  .product__card {
+    gap: 20px;
+  }
+
+  .product__img-wrapper,
+.product__info-wrapper {
+  width: 100%;
+}
+
+  .product__img {
+    width: 300px;
+  }
+
+}
 
 @media (max-width: 400px) {}
