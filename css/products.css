@@ -38,7 +38,8 @@
   border-bottom: 1px solid #7F7F7F;
   padding: 40px 0 30px;
 }
-.series:last-child{
+
+.series:last-child {
   padding: 40px 0 20px;
   border-bottom: none;
 }
@@ -124,14 +125,18 @@
 }
 
 @media (max-width: 900px) {
-  .series__list{
-        grid-template-columns: repeat(2, 1fr);
+  .series__list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
-  .series__list{
-        /* grid-template-columns: repeat(1, 1fr); */
+  .series__list {
+    /* grid-template-columns: repeat(1, 1fr); */
+  }
+
+  .hero {
+    height: 200px;
   }
 }
 
