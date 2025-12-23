@@ -36,7 +36,7 @@
 .product__inner {}
 
 .product__card {
-  border: 1px solid #00f;
+  /* border: 1px solid #00f; */
   width: 100%;
   display: flex;
   gap: 50px;
@@ -46,21 +46,21 @@
 .product__img-wrapper,
 .product__info-wrapper {
   width: 50%;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .product__img {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   /* width: 100%; */
   width: 500px;
 }
 
 .product__info {
   text-align: right;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   line-height: 1;
 }
 
