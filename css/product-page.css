@@ -110,7 +110,7 @@
   margin-right: 10px;
 }
 
-.product__info button {
+.product__info a {
   background: #fff;
   display: flex;
   align-items: center;
